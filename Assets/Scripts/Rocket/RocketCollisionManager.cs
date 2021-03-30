@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class RocketCollisionManager : MonoBehaviour
 {
+    public MyGameManager gameManager;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -18,11 +20,15 @@ public class RocketCollisionManager : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
+        if (gameObject.transform.rotation.z > 30 || gameObject.transform.rotation.z < -30)
+        {
+            gameManager.endLevel(false);
+        }
         if (collision.gameObject.name == "LandingPad"
             && gameObject.transform.position.x < collision.gameObject.transform.position.x + 1.5
             && gameObject.transform.position.x > collision.gameObject.transform.position.x - 1.5)
         {
-            Destroy(gameObject);
+            gameManager.endLevel(true);
         }
     }
 }
