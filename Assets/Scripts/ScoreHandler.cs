@@ -1,9 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ScoreHandler : MonoBehaviour
 {
+    public Text coinsText;
+
     private int coins;
 
     // Start is called before the first frame update
@@ -15,6 +18,7 @@ public class ScoreHandler : MonoBehaviour
     public void AddCoin()
     {
         coins++;
-        Debug.Log(coins);
+        coinsText.text = coins.ToString();
+        //Debug.Log(coins);
     }
 }
