@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Rocket : MonoBehaviour
+public class RocketController : MonoBehaviour
 {
     //Ik maakte gebruik van https://docs.unity3d.com/2017.3/Documentation/ScriptReference/Transform-rotation.html voor de rotatie
 
