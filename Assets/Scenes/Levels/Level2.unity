@@ -2136,5 +2136,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: CannonMachine
       objectReference: {fileID: 0}
+    - target: {fileID: 5176489967487696381, guid: fff24d8e8d76a4f8cbb7ef04e743d3e7, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fff24d8e8d76a4f8cbb7ef04e743d3e7, type: 3}
