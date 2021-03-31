@@ -2140,5 +2140,36 @@ PrefabInstance:
       propertyPath: m_Convex
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 5176489967487696381, guid: fff24d8e8d76a4f8cbb7ef04e743d3e7, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5176489967487696381, guid: fff24d8e8d76a4f8cbb7ef04e743d3e7, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+    - target: {fileID: 5176489967487696381, guid: fff24d8e8d76a4f8cbb7ef04e743d3e7, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 5176489967487696381, guid: fff24d8e8d76a4f8cbb7ef04e743d3e7, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: fff24d8e8d76a4f8cbb7ef04e743d3e7, type: 3}
+--- !u!1 &5176489966156192928 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5174844497433547806, guid: fff24d8e8d76a4f8cbb7ef04e743d3e7, type: 3}
+  m_PrefabInstance: {fileID: 5176489966156192925}
+  m_PrefabAsset: {fileID: 0}
+--- !u!135 &5176489966156192929
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5176489966156192928}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1.1
+  m_Center: {x: -0.0035243044, y: 0.10658019, z: 0.050192725}
