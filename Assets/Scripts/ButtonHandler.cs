@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class ButtonHandler : MonoBehaviour
 {
-    public void OpenLevel(int level) //int level
+    public void OpenLevel(int level)
     {
         SceneManager.LoadScene(sceneName: "Assets/Scenes/Levels/Level" + level + ".unity");
     }

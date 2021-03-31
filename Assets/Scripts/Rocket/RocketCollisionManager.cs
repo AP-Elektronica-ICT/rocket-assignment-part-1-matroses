@@ -6,21 +6,9 @@ public class RocketCollisionManager : MonoBehaviour
 {
     public MyGameManager gameManager;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     private void OnCollisionEnter(Collision collision)
     {
-        if (gameObject.transform.rotation.z > 30 || gameObject.transform.rotation.z < -30)
+        if (collision.gameObject.tag == "Bullet" || collision.gameObject.tag == "Obstacle" || collision.gameObject.tag == "Enemy")
         {
             gameManager.endLevel(false);
         }
@@ -28,6 +16,7 @@ public class RocketCollisionManager : MonoBehaviour
             && gameObject.transform.position.x < collision.gameObject.transform.position.x + 1.5
             && gameObject.transform.position.x > collision.gameObject.transform.position.x - 1.5)
         {
+            gameObject.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
             gameManager.endLevel(true);
         }
     }
